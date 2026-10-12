@@ -1,0 +1,42 @@
+<app-page-hero
+  titre="{{ titre }}"
+  [breadcrumbs]=" breadcrumbs "></app-page-hero>
+<!-- STORY -->
+  <section class="section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 reveal">
+          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&h=560&fit=crop" class="rounded-img w-100" alt="Nexora studio workspace" style="aspect-ratio:5/4; object-fit:cover;">
+        </div>
+        <div class="col-lg-6 reveal">
+          <span class="eyebrow">Our story</span>
+          <h2 class="section-title">Founded by operators, built for operators</h2>
+          <p class="section-subtitle mb-3">Nexora started in 2014 when three product leads, frustrated with slow agency turnaround, decided to build the studio they wished they could hire. Over a decade later, we've shipped products for fintech, healthtech and B2B SaaS companies across 34 countries.</p>
+          <p class="mb-4">Today our team of 42 designers, engineers and strategists works in small, senior pods — each dedicated to two or three clients at a time so quality never slips.</p>
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-3">
+                <div class="icon-box icon-box-primary"><i class="bi bi-calendar-check"></i></div>
+                <div><strong class="text-navy d-block">Since 2014</strong><small class="text-slate">12 years operating</small></div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-3">
+                <div class="icon-box icon-box-success"><i class="bi bi-globe"></i></div>
+                <div><strong class="text-navy d-block">Remote-first</strong><small class="text-slate">Across 9 timezones</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <app-motive></app-motive>
+  <app-direction></app-direction>
+
+  <app-cta
+    titreCta="{{ titreCta }}"
+    descriptionCta="{{ descriptionCta }}"
+    btnCta="{{ btnCta }}"
+  ></app-cta>

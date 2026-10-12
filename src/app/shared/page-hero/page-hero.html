@@ -1,0 +1,30 @@
+<!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="container">
+      @if (titre()) {
+      <h1 class="mb-3">{{ titre() }}</h1>
+      }
+      <div class="breadcrumb-custom">
+         <!-- Home -->
+      <a routerLink="/">Home</a>
+
+         <!-- Breadcrumbs -->
+      @for (item of breadcrumbs(); track item.label) {
+
+        <span>/</span>
+
+        @if (item.link) {
+          <a [routerLink]="item.link">
+            {{ item.label }}
+          </a>
+        } @else {
+          <span class="active">
+            {{ item.label }}
+          </span>
+        }
+
+      }
+
+    </div>
+    </div>
+  </header>
